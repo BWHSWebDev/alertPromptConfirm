@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <script>
 
-let usersName = prompt("What is your name?", "Enter Name Here")
-let confirmedName = confirm(`Is ${usersName} you name?`)
-alert("Your Name is " + usersName)
-                                                                    </script>   
+let usersName;
+let confirmedName = false;
+// Defining the Variables
+
+do { // Reapeat Loop do...while
+ 
+usersName = prompt("What is your name?", "Enter Name Here");
+//Asks user about their name and stores it in usersName
+confirmedName = confirm(`Is ${usersName} you name?`);
+//Confirms if this is really their name
+
+} while (confirmedName === false);
+//Does this until they say it is their name
+
+alert("Your name is " + usersName);
+
+close();
+/*Tells them their name
+and closes the tab*/
+                                                         </script>   
